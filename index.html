@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Task Tracker</title>
+<style>
+body{font:17px system-ui;background:#f3f6fa;color:#17243a;margin:0;padding:40px 20px}main{max-width:680px;margin:auto;background:white;padding:32px;border-radius:16px}h1{margin-top:0}form{display:flex;gap:8px}input{flex:1;min-width:0;padding:12px}button,select{padding:10px;cursor:pointer}ul{padding:0;list-style:none}li{display:flex;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid #ddd}li span{flex:1;overflow-wrap:anywhere}li input{flex:none}.done{text-decoration:line-through;color:#657086}label[for=filter]{display:block;margin-top:24px}#status{min-height:24px;color:#42536b}
+</style>
+<main>
+<h1>Task Tracker</h1>
+<p>A small personal task list stored in this browser.</p>
+<form id="add-form"><input id="title" aria-label="Task title" placeholder="What needs doing?" maxlength="200" required><button>Add task</button></form>
+<label for="filter">Show tasks</label>
+<select id="filter"><option value="all">All</option><option value="active">Active</option><option value="completed">Completed</option></select>
+<p id="status" role="status"></p><ul id="tasks"></ul>
+</main>
+<script src="app.js"></script>
+</html>
