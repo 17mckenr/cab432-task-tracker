@@ -27,3 +27,7 @@ There are no user accounts, cloud sync, due dates, title editing, or undo. Clear
 - `docs/manual-checks.md`: browser verification checklist.
 
 The custodian should retrieve this documentation to ground its answers and distinguish implemented behavior from feature requests.
+
+## Repository custodian
+
+The separate assessment chat is deployed at https://chat.n11590386.cab432.com and requires the owner's assessment access key. It answers questions using indexed documentation, reads live issues and a small allowlist of source files, returns a reference screenshot, and queues triage drafts for background processing. An hourly check queues changed open issues and records its work in DynamoDB. Proposed changes still require review; this does not add undo, cloud sync, or other features to the Task Tracker.
